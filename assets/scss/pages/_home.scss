@@ -1,35 +1,62 @@
-$background-color_1: #fff;
 .home {
-  .accordion {
-    width: 100%;
-  }
-  .accordion-item {
-    background-color: $background-color_1;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  .accordion-header {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+  width: 1170px;
+  height: 465px;
+  padding: 35px 0 0 35px;
+  .bg-home {
+    float: right;
+    background-image: url("https://preview.colorlib.com/theme/ogani/img/hero/banner.jpg.webp");
+    width: 845px;
+    height: 430px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-  .accordion-content {
-    display: none;
-    padding: 10px;
-  }
-  .icon {
-    font-size: 20px;
-    margin-left: auto;
-    transform: rotate(90deg);
-    transition: all 0.2s ease;
-  }
-  .open {
-    .icon {
-      transform: rotate(0);
+    padding-left: 80px;
+    .home-content {
+      margin: 0;
+      width: 271px;
+      span {
+        color: #7fad39;
+        letter-spacing: 4px;
+        font-size: 14px;
+        font-weight: 900;
+      }
+      h1 {
+        font-size: 46px;
+        color: #252525;
+        line-height: 52px;
+        font-weight: 800;
+      }
+      p {
+        color: #6f6f6f;
+      }
+      button {
+        width: 140px;
+        height: 40px;
+        border: none;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 2px;
+        background-color: #7fad39;
+        line-height: 21px;
+        font-size: 14px;
+        margin-top: 35px;
+      }
     }
   }
 }
+// .carusel{
+//     .cards-section{
+//         .card{
+//             position: relative;
+//             img{
+
+//             }
+//             .text{
+//                 position: absolute;
+//                 z-index: 3;
+//                 p{
+
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,11 +1,7 @@
-const accordionItems = document.querySelectorAll(".accordion-item");
+const accordionHeader = document.querySelector(".accordion-header .fa-angle-down");
+const accordionContent = document.querySelector(".accordion-content");
 
-accordionItems.forEach(item =>
-  item.addEventListener("click", () => {
-    const isItemOpen = item.classList.contains("open");
-    accordionItems.forEach(item => item.classList.remove("open"));
-    if (!isItemOpen) {
-      item.classList.toggle("open");
-    }
-  })
-);
+accordionHeader.addEventListener("click", () => {
+  console.log("hi");
+  accordionContent.classList.toggle("open");
+});

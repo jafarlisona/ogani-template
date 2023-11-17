@@ -59,7 +59,7 @@ nav {
       height: 80px;
       display: flex;
       align-items: center;
-      .logo{
+      .logo {
         margin: 0;
       }
       .links {
@@ -72,8 +72,8 @@ nav {
             letter-spacing: 2px;
             font-weight: 900;
             line-height: 21px;
-            &:hover{
-                color: #7fad39;
+            &:hover {
+              color: #7fad39;
             }
           }
         }
@@ -101,6 +101,139 @@ nav {
           span {
             color: #252525;
             font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+  .container-input {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .content-inputs {
+      margin: 0;
+      .accordion {
+        position: absolute;
+        width: 262px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .accordion-item {
+        // margin-bottom: 10px;
+        // padding: 10px;
+        background-color: white;
+      }
+      .accordion-header {
+        background-color: #7fad39;
+        font-size: 18px;
+        font-weight: 900;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+        width: 262px;
+      }
+      .accordion-content {
+        transition: 0.5s;
+        border: 1px solid #ebebeb;
+        height: 455px;
+        border-top: none;
+        overflow: hidden;
+        padding: 11px 40px;
+        ul {
+          li {
+            height: 39px;
+            a {
+              color: #1c1c1c;
+            }
+          }
+        }
+      }
+      .icon {
+        font-size: 16px;
+      }
+      .open {
+        height: 0px;
+        padding:0 40px;
+      }
+    }
+    .inputs {
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+      width: 850px;
+      .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 50px;
+        border: 1px solid #ebebeb;
+        span {
+          width: 185px;
+          color: #1c1c1c;
+          font-weight: 900;
+          display: block;
+          padding-left: 20px;
+          i {
+            border-right: 1px solid #ebebeb;
+            font-size: 12px;
+            padding-right: 20px;
+            line-height: 20px;
+          }
+        }
+        input {
+          width: 325px;
+          border: none;
+          color: #b2b2b2;
+          outline: none;
+          height: 48px;
+          font-size: 16px;
+          &::placeholder {
+            color: #b2b2b2;
+          }
+        }
+        button {
+          border: none;
+          width: 110px;
+          background-color: #7fad39;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 900;
+          height: 50px;
+        }
+      }
+      .phone {
+        display: flex;
+        margin: 0;
+        gap: 20px;
+        height: 50px;
+        align-items: center;
+        .icon-phone {
+          background-color: #f5f5f5;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: grid;
+          place-items: center;
+          i {
+            color: #7fad39;
+            font-size: 15px;
+          }
+        }
+        .number {
+          span {
+            font-weight: 900;
+            color: #212529;
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+            color: #6f6f6f;
           }
         }
       }

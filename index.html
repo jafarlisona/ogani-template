@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ogani | Template</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <nav>
@@ -65,22 +66,118 @@
                 </div>
             </div>
         </div>
+        <div class="container-input">
+               <div class="content-inputs">
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-header">
+                        <span class="icon"><i class="fa-solid fa-bars"></i></span>
+                        All departments
+                        <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
+                      </div>
+                      <div class="accordion-content">
+                        <ul>
+                            <li><a href="#">Fresh Meat</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Fruit & Nut Gifts</a></li>
+                            <li><a href="#">Fresh Berries</a></li>
+                            <li><a href="#">Ocean Foods</a></li>
+                            <li><a href="#">Butter & Eggs</a></li>
+                            <li><a href="#">Fastfood</a></li>
+                            <li><a href="#">Fresh Onion</a></li>
+                            <li><a href="#">Papayaya & Crisps</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Fresh Bananas</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inputs">
+                  <div class="search">
+                      <span>All Categories <i class="fa-solid fa-angle-down"></i></span>
+                      <input type="text" placeholder="What do you need?">
+                      <button>Search</button>
+                  </div>
+                  <div class="phone">
+                      <div class="icon-phone">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="number">
+                            <span>+65 11.188.888</span>
+                            <p>support 24/7 time</p>
+                        </div>
+                  </div>
+                </div>
+        </div>
     </nav>
     <main>
         <section class="home">
-            <div class="accordion">
-                <div class="accordion-item">
-                  <div class="accordion-header">
-                    Item 1
-                    <span class="icon"><i class="fa-solid fa-angle-down"></i></span>
-                  </div>
-                  <div class="accordion-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan neque condimentum leo interdum, et gravida orci porttitor. 
-                  </div>
+            <div class="bg-home">
+                <div class="home-content">
+                    <span>FRUIT FRESH</span>
+                    <h1>
+                        Vegetable 100% Organic
+                    </h1>
+                    <p>Free Pickup and Delivery Available</p>
+                    <button>SHOP NOW</button>
                 </div>
-              </div>
+            </div>
+        </section>
+        <section class="carusel">
+            <div class="cards-section">
+                <div class="card">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/categories/cat-1.jpg" alt="">
+                    <div class="text">
+                        <p>fresh fruit</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/categories/cat-2.jpg" alt="">
+                    <div class="text">
+                        <p>dried fruit</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/categories/cat-3.jpg" alt="">
+                    <div class="text">
+                        <p>Vegetables</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/categories/cat-4.jpg.webp" alt="">
+                    <div class="text">
+                        <p>Fruits</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/categories/cat-5.jpg.webp" alt="">
+                    <div class="text">
+                        <p>meat</p>
+                    </div>
+                </div>
+        
+            </div>      
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script>
+        $(document).ready(function () {
+            $('.cards-section').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow:'<i class="fa-solid fa-chevron-left"></i>',
+                nextArrow:'<i class="fa-solid fa-chevron-right"></i>',
+                autoplay:true,
+                speed: 700,
+                autoplaySpeed: 5000,
+            });
+        });
+
+    </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

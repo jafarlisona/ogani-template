@@ -117,34 +117,176 @@ nav .container-navbar .navbar .navbar-end .items-count span {
   color: #252525;
   font-weight: 900;
 }
-
-.home .accordion {
-  width: 100%;
+nav .container-input {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-.home .accordion-item {
-  background-color: #fff;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
+nav .container-input .content-inputs {
+  margin: 0;
 }
-.home .accordion-header {
+nav .container-input .content-inputs .accordion {
+  position: absolute;
+  width: 262px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav .container-input .content-inputs .accordion-item {
+  background-color: white;
+}
+nav .container-input .content-inputs .accordion-header {
+  background-color: #7fad39;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 900;
+  color: white;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 47px;
+  width: 262px;
 }
-.home .accordion-content {
-  display: none;
-  padding: 10px;
+nav .container-input .content-inputs .accordion-content {
+  transition: 0.5s;
+  border: 1px solid #ebebeb;
+  height: 455px;
+  border-top: none;
+  overflow: hidden;
+  padding: 11px 40px;
 }
-.home .icon {
-  font-size: 20px;
-  margin-left: auto;
-  transform: rotate(90deg);
-  transition: all 0.2s ease;
+nav .container-input .content-inputs .accordion-content ul li {
+  height: 39px;
 }
-.home .open .icon {
-  transform: rotate(0);
+nav .container-input .content-inputs .accordion-content ul li a {
+  color: #1c1c1c;
+}
+nav .container-input .content-inputs .icon {
+  font-size: 16px;
+}
+nav .container-input .content-inputs .open {
+  height: 0px;
+  padding: 0 40px;
+}
+nav .container-input .inputs {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: 850px;
+}
+nav .container-input .inputs .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 50px;
+  border: 1px solid #ebebeb;
+}
+nav .container-input .inputs .search span {
+  width: 185px;
+  color: #1c1c1c;
+  font-weight: 900;
+  display: block;
+  padding-left: 20px;
+}
+nav .container-input .inputs .search span i {
+  border-right: 1px solid #ebebeb;
+  font-size: 12px;
+  padding-right: 20px;
+  line-height: 20px;
+}
+nav .container-input .inputs .search input {
+  width: 325px;
+  border: none;
+  color: #b2b2b2;
+  outline: none;
+  height: 48px;
+  font-size: 16px;
+}
+nav .container-input .inputs .search input::placeholder {
+  color: #b2b2b2;
+}
+nav .container-input .inputs .search button {
+  border: none;
+  width: 110px;
+  background-color: #7fad39;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  height: 50px;
+}
+nav .container-input .inputs .phone {
+  display: flex;
+  margin: 0;
+  gap: 20px;
+  height: 50px;
+  align-items: center;
+}
+nav .container-input .inputs .phone .icon-phone {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+nav .container-input .inputs .phone .icon-phone i {
+  color: #7fad39;
+  font-size: 15px;
+}
+nav .container-input .inputs .phone .number span {
+  font-weight: 900;
+  color: #212529;
+  font-size: 18px;
+}
+nav .container-input .inputs .phone .number p {
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+.home {
+  width: 1170px;
+  height: 465px;
+  padding: 35px 0 0 35px;
+}
+.home .bg-home {
+  float: right;
+  background-image: url("https://preview.colorlib.com/theme/ogani/img/hero/banner.jpg.webp");
+  width: 845px;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+.home .bg-home .home-content {
+  margin: 0;
+  width: 271px;
+}
+.home .bg-home .home-content span {
+  color: #7fad39;
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 900;
+}
+.home .bg-home .home-content h1 {
+  font-size: 46px;
+  color: #252525;
+  line-height: 52px;
+  font-weight: 800;
+}
+.home .bg-home .home-content p {
+  color: #6f6f6f;
+}
+.home .bg-home .home-content button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background-color: #7fad39;
+  line-height: 21px;
+  font-size: 14px;
+  margin-top: 35px;
 }/*# sourceMappingURL=style.css.map */
